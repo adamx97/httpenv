@@ -5,7 +5,7 @@ name: Lint Code Base
 on:
   
   push:
-    branches: [main]
+    branches: [mainzz] # mainzz will cause this step to be skipped cuz we don't have a mainzz branch.
   
   pull_request:
 
