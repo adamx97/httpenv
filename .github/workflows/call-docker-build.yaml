@@ -3,9 +3,9 @@
 name: Docker Build
 
 on:
-  push_skipthis:
+  push:
     branches:
-      - main
+      - mainzz # mainzz will cause this step to be skipped cuz we don't have a mainzz branch.
     # don't rebuild image if someone only edited unrelated files
     paths-ignore:
       - 'README.md'
