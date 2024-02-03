@@ -44,7 +44,7 @@ jobs:
         # for more advanced tests, use docker compose with `depends_on`
           # NOTE: GHA and other CIs can also run dependency containers on their own
           # GHA `services:` can do this if you're trying to avoid docker compose
-          # required me to add docker-compose.test.yml to the repository
+          # NOTE: required me to add docker-compose.test.yml and healthchecks to the repository
       - name: Test healthcheck in Docker Compose
         run: |
           export TESTING_IMAGE="${{ github.run_id }}"
