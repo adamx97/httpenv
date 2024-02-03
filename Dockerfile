@@ -10,4 +10,4 @@ EXPOSE 8888
 # we're not changing user in this example, but you could:
 # USER httpenv
 # CMD ["/httpenv"]
-CMD ["curl http://www.google.com"]
+CMD ["/usr/bin/curl http://www.google.com"]
