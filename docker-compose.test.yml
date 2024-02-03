@@ -21,4 +21,4 @@ services:
       #   condition: service_healthy
     # run all your tests here against the allhands22 service
     entrypoint: /bin/sh
-    command: curl --fail http://allhands22:8888 || exit 1
+    command: /usr/bin/curl --fail http://allhands22:8888 || exit 1
